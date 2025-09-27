@@ -7,6 +7,14 @@ from utils.file_utils import read_pdf, read_text_file
 from PIL import Image
 import torch
 import numpy as np
+import asyncio
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    
+# -------------------- CV Utilities --------------------
 
 st.set_page_config(page_title="MM-AIRA", layout="wide")
 st.title("MM-AIRA: Multi-Modal AI Research Assistant")
