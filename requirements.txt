@@ -1,0 +1,12 @@
+streamlit
+langchain
+faiss-cpu
+transformers
+torch
+opencv-python
+pillow
+python-docx
+pdfplumber
+sentence-transformers
+pandas
+matplotlib
