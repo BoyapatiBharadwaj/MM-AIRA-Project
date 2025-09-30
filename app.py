@@ -81,7 +81,7 @@ if mode == "Text / PDF":
         st.write(text[:1000] + "..." if len(text) > 1000 else text)
 
         # NLP + RAG
-        rag = RAGPipeline(llm_model="llama2:7b")  # smaller LLM for laptop
+        rag = RAGPipeline(llm_model="llama2:7b-chat")  # smaller LLM for laptop
         if query:
             try:
                 answer = rag.query(text, query)

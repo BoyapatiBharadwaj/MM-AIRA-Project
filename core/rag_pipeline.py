@@ -2,7 +2,7 @@ from langchain.llms import Ollama
 from core.nlp_processor import NLPProcessor
 
 class RAGPipeline:
-    def __init__(self, llm_model="llama2:7b"):
+    def __init__(self, llm_model="llama2:7b-chat"):
         self.llm = Ollama(model=llm_model)
         self.nlp = NLPProcessor()
 
